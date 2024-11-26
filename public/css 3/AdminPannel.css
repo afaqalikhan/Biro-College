@@ -1,0 +1,50 @@
+body {
+    font-size: 0.875rem;
+    background-color: #f8f9fa;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #cfd8dc;
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: #0056b3;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: -1.25rem;
+    right: -1rem;
+    opacity: 0.4;
+    font-size: 5rem;
+    transform: rotate(15deg);
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
